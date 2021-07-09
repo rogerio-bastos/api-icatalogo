@@ -90,8 +90,11 @@ class Router{
                 break;
         }
 
+        var_dump($this->controller);
+        var_dump($this->controllerMethod);
+
         //chamando o método e o controller 
-        call_user_func_array([$this->controller, $this->controllerMethod], $this->params);
+        // call_user_func_array([$this->controller, $this->controllerMethod], $this->params);
 
      }
 

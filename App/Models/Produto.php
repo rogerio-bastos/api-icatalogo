@@ -29,7 +29,7 @@ class Produto {
         //Verificamos a quantidade de linhas
         if($stmt->rowCount() > 0){
             //pegamos os resultados em forma de lista de objetos 
-            $resultado = $stmt->fetchALL(\PDO::FETCH_OBJ);
+            $resultado = $stmt->fetchAll(\PDO::FETCH_OBJ);
 
             //retoramos o resultado
             return $resultado;
